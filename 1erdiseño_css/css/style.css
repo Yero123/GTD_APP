@@ -1,0 +1,218 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+    box-sizing:inherit;
+}
+
+
+body{
+    
+    margin: 0;
+    background-image: linear-gradient(to right, #0b388a, #054b9b, #055dac, #0f70bb, #1f83ca, #298dd3, #3298db, #3ba2e4, #3fa7e9, #43abee, #47b0f4, #4bb5f9);
+}
+
+.flex_container{
+    display: flex;
+    flex: 0 0 100%;
+    
+}
+.flex_content{
+    
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+  align-items: center;
+}
+.title{
+    color: snow;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 1em;
+    font-size: 4em;
+}
+.menu{
+    
+    padding: 0;
+   
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.menu_li::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffffffb4;
+    transition: width .3s;
+  }
+  .menu_li:hover::after{
+    width: 100%;
+    transition: width .3s;
+  }
+@media only screen and (min-width:700px) {
+    
+    .menu{
+        flex: 0 0 calc(33%);
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+}
+.icon_header{
+    
+    margin: 0 0.5rem;
+}
+.menu .menu_li{
+    
+   
+    list-style: none;
+
+    padding: 2rem;
+    
+}
+.menu .menu_li a{
+    font-family: 'Dancing Script', cursive;
+    color: snow;
+    border-radius: 15%;
+    padding: 1.2rem;
+   font-size: 2rem;
+    text-decoration: none;
+}
+.main_container{
+    
+    flex: 1 0 100%;
+    
+    display: flex;
+    flex-direction: column;
+  
+    
+}
+.main_main_container{
+   
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    
+
+}
+.main_div_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   
+    
+}
+.logo_container{
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.imagen_logo{
+    width: 30em;
+}
+
+.cronometro_h2{
+   letter-spacing: 0.1rem;
+font-family: 'Poppins', sans-serif;
+font-weight: 100;
+
+    font-size: 3.5rem;
+    color: seashell;
+    
+}
+.cronometro{
+    margin: 0;
+    padding: 0;
+    border:10px solid white;
+    
+    display: flex;
+ text-align: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+   
+ font-size: 4.5srem;
+ align-items: center;
+ justify-content: center;
+}
+.play{
+        margin: 0;
+        padding: 0;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.fa-play{
+  
+    font-size: 2rem;
+    color: #268fe6;
+}
+.balls_container{
+    padding: 30px;
+ 
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    
+}
+.ball{
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+@media only screen and (min-width:700px) {
+    
+    .imagen_logo{
+        width: 40em;
+    }
+
+    .cronometro{
+       
+        width: 350px;
+        height: 350px;
+             
+    }
+    .cronometro_h2{
+        font-size: 5rem;
+      
+        
+    }
+}
+
+@media only screen and (min-width:1100px) {
+    
+    .imagen_logo{
+        padding: 0;
+        margin: 0;
+        
+        width: 45em;
+    }
+
+    .cronometro{
+       padding: 0;
+        margin: 0;
+        width: 350px;
+        height: 350px;
+             
+    }
+    .cronometro_h2{
+        font-size: 5rem;
+       
+        
+    }
+}
+

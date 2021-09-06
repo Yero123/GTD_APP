@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- My JS -->
+    <script src="main.js"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Flow App</title>
+  </head>
+  <body onload="template()">
+    <div class = "contenedor">
+      <div class = "cabezita_reducida">
+        <h1 class = "logo">
+          <a href ="/">
+          <img src="icon.png" width="100px" alt="pomofoucs icon" ="sc-kGXeez eWatmt">
+          Pomodoros
+        </a>
+        </h1>
+        <span class="sc-kpOJdX caepzu">
+          <button class="sc-bxivhb sc-EHOje sc-ckVGcZ ecshkw">
+            <img src="/icons/graph-white.png" alt="graph icon" class="sc-jKJlTe hINVtW">
+             <div class="sc-kEYyzF gkSMJF">
+               Report
+              </div>
+            </button>
+            <button class="sc-bxivhb sc-EHOje sc-ckVGcZ ecshkw">
+              <img src="/icons/config-white.png" alt="config icon" class="sc-jKJlTe hINVtW"> 
+              <div class="sc-kEYyzF gkSMJF">
+                Setting
+              </div>
+            </button>
+            <div class="sc-dxgOiQ Zcaca">
+              <button class="sc-bxivhb sc-EHOje sc-ckVGcZ ecshkw">
+                <img src="/icons/user-white.png" class="sc-jKJlTe hINVtW">
+                <div class="sc-kEYyzF gkSMJF">
+                  Login
+                </div>
+              </button>
+              <div class="sc-gqjmRU iebOiK">
+                <div id="google-signin" class="sc-VigVT kPQbFR">
+                  <img src="/icons/google-black.png" alt="google icon" class="sc-jTzLTM eCMmlJ">
+                  Login with Google
+                </div>
+                <div class="sc-VigVT kPQbFR">
+                  <img src="/icons/envelope-black.png" alt="email icon" class="sc-jTzLTM eCMmlJ">
+                  Login with Email
+                </div>
+              </div>
+            </div>
+          </span>
+        <span class= "imagenes"></span>
+          
+      </div>
+
+    </div>
+    <div class="container">
+      <!-- Heading -->
+      <h1 class="text-center my-5 heading">Flow</h1>
+
+      <!-- Main Timer -->
+      <div class="container timer">
+        <div class="row">
+          <div class="col-5">
+            <h4 id="minutes"></h4>
+          </div>
+          <div class="col-2">
+            <h4>:</h4>
+          </div>
+          <div class="col-5">
+            <h4 id="seconds"></h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Finished Message -->
+      <div class="my-5">
+        <h3 id="done" class="text-center"></h3>
+      </div>
+
+      <!-- Start Button and reset button-->
+      <div class="conatiner d-flex justify-content-center my-5">
+        <button class="btn" onclick="start_timer()">
+          <i class="fas fa-play fa-2x"></i>
+        </button>
+        <a href="index.html"><i class="fas fa-redo-alt fa-2x"></i></a>
+      </div>
+    </div>
+  </body>
+</html>

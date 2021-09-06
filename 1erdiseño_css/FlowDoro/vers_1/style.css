@@ -1,0 +1,81 @@
+/* Body background and font */
+body {
+  background: #3078e4;
+  font-family: "Pacifico", cursive;
+}
+
+/* Main heading */
+.heading {
+  color: #bae8e8;
+}
+
+/* Countdown timer */
+.timer {
+  color: #ffffff;
+  text-align: center;
+  width: 20rem;
+  height: 20rem;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2 {
+  text-align: center;
+  /*font-family: 'IBM Plex Serif', serif;*/
+}
+.sc-dxgOiQ {
+display: flex;
+
+}
+.contenedor {
+  display: flex;
+  background-color: white;
+  height: calc( 10vh - 20px );
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px 0 30px;
+}
+
+.cabezita_reducida{
+  display: flex;
+  color: #ae4343;
+}
+.row {
+  width: 100%;
+}
+
+/* remove the padding on the play button */
+.btn {
+  padding: 0;
+  color: #a81717;
+}
+
+/* play and reset icons */
+.fa-play,
+.fa-redo-alt {
+  color: #e3f6f5;
+  border: 2px solid transparent;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.fa-play:hover,
+.fa-redo-alt:hover {
+  color: #bae8e8;
+  border: 2px solid #bae8e8;
+  transition: 0.3s ease;
+}
+
+/* Dynamic class */
+/* Make the message visible */
+.show_message {
+  display: block;
+  padding: 1rem 0;
+  color: #272343;
+  background: #e3f6f5;
+  border-radius: 0.5rem;
+  transition: 0.5s ease;
+}
