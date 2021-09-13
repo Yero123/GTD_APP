@@ -1,4 +1,4 @@
-
+/*VARIABLES*/
 :root{
     --medida: 5rem;
     --textos: rgb(30, 30, 30);
@@ -26,8 +26,9 @@ h2{
     margin: 2.5rem 0;
 }
 h4{
-    font-size: 2.1rem;
+    font-size: 2rem;
 }
+
 @media screen and (min-width:900px) {
     h2{
         font-size: 3rem;
@@ -37,6 +38,15 @@ h4{
     display: flex;
     flex-direction: column;
     height: 100vh;
+}
+
+/*JAVASCRIPT*/
+.order1{
+    order: 1;
+}
+.disabled {
+    pointer-events: none;
+    opacity: 0.4;
 }
 /*UTILIDADES*/
 .container{
@@ -49,7 +59,7 @@ h4{
 .list-none{list-style: none;}
 .border{border-bottom: .3rem solid var(--blanco);}
 .icon-min{height: 2rem; width:2rem; margin: 0 1rem 0 .3rem;}
-.icon-opacity{  filter: opacity(68%); margin: 0 2rem;}
+
 .fas, .far{
     color: var(--textos);
     font-size: 2.5rem;
@@ -60,9 +70,9 @@ h4{
     height: 2.1rem;
     margin-right: 0rem;
 }
-.icon--green{font-size: 1.8rem; color: rgb(79, 219, 126); margin-left: .3rem; margin-right: .2rem;}
+.icon--green{font-size: 1.8rem; color: rgb(53, 204, 103); margin-right: .2rem;}
 .icon--green:hover{
-    color: rgb(83, 204, 120);
+    color: rgb(60, 197, 101);
 }
 /*Header*/
 .header__nav{
@@ -110,28 +120,29 @@ h4{
     color: #eee;
     flex-direction: column;
     align-items: center;
-    background-image: linear-gradient(to right top, #517bbb, #527cbd, #527dbf, #537fc2, #5480c4);
+    /*CHISTO ELIGIRÁ COLOR --MODIFICAR */
+    background-image: linear-gradient(to left bottom, #4074c2, #467cce, #3a6ebd, #4176c5, #4476c2);
     margin: 1rem;
-    transition-property: flex-direction;
     cursor: pointer;
 }
-.flex-reverse{
-    transition: all .3s ease;
-    flex-direction: column-reverse;
-}
+
 .timer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    max-width: 75rem;
+    max-width: 70rem;
     width: 90%;
     text-align: center;
     line-height: .8;
+    transition: all 1s ease;
+    padding: 1rem 0;
     margin: calc(var(--medida) / 3) 0;
 }
-.timer--opacity{
-    max-width: 50rem;
-    width: 90%;
-    opacity: .8;
+.timer-container--max-width{
+    max-width: 45rem;
 }
+
 .timer-flex-center{
     justify-content: space-evenly;
 
@@ -140,10 +151,6 @@ h4{
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-.btn-disabled{
-    opacity: 0.5;
 }
 .time-icon{
     transition: transform, .1s ease;
@@ -159,9 +166,7 @@ h4{
 .timer__number:hover{
     transform: scale(1.1);
 }
-.first-time{
-    font-size: 5.2rem;
-}
+
 .timer__h2{
     padding: 2rem 0;
 }
@@ -169,6 +174,9 @@ h4{
     .timer__number{
         font-size: 8rem;
         font-weight: 300;
+    }
+    .time__number--modifier{
+        font-size: 8;
     }
     .first-time{
         font-size: 11rem;
@@ -198,7 +206,7 @@ h4{
     border-bottom: 1px solid #eee;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 1rem;
 }
 .tarea-li:last-of-type{
     border:none
@@ -207,3 +215,24 @@ h4{
     font-size: 1.2rem;
     padding-right: 1.5rem;
 }
+.tarea{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%;
+}
+.tarea__descripcion{
+    display: flex;
+    align-items: center;
+}
+.tarea-li__ul {
+    display: flex;
+    padding: 0;
+    justify-content: flex-start;
+}
+.tarea-ul__li{
+    padding-left: 1rem;
+}
+.tarea-descripcion{
+    margin-left: .5rem;
+}
+
