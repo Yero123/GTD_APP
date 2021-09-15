@@ -16,30 +16,30 @@ userName.addEventListener("click" , e=>{
     }else{
         btnUser.classList.remove("icon-transform")
         btnUser.classList.add("icon-down");
-    }    
-})
-
-/*ANIMACION TIMER */
-const iconTime = document.querySelectorAll(".time-icon");
-    iconTime.forEach(icon =>{
-        icon.addEventListener("click" , () =>{
-            container1.classList.toggle("order1");
-            if(container1.classList.contains("disabled")){
-                container1.classList.remove("disabled");
-                container1.classList.remove("timer-container--max-width");
-                lastNumber.classList.remove("first-time");
-                container2.classList.add("disabled");
-                firstNumber.classList.add("first-time");
-                container2.classList.add("timer-container--max-width");
-            }else{
-                firstNumber.classList.remove("first-time");
-                container2.classList.remove("disabled")
-                container2.classList.remove("timer-container--max-width");
-                container1.classList.add("disabled");
-                container1.classList.add("timer-container--max-width");
-                lastNumber.classList.add("first-time");
-            }
-        })
+        }    
     })
-    
+
+    /*ANIMACION TIMER */
+    const iconTime = document.querySelectorAll(".time-icon");
+        iconTime.forEach(icon =>{
+            icon.addEventListener("click" , () =>{
+                container1.classList.toggle("order1");
+                if(container1.classList.contains("disabled")){
+                    container1.classList.remove("disabled");
+                    container1.classList.remove("timer-container--max-width");
+                    lastNumber.classList.remove("first-time");
+                    container2.classList.add("disabled");
+                    firstNumber.classList.add("first-time");
+                    container2.classList.add("timer-container--max-width");
+                }else{
+                    firstNumber.classList.remove("first-time");
+                    container2.classList.remove("disabled")
+                    container2.classList.remove("timer-container--max-width");
+                    container1.classList.add("disabled");
+                    container1.classList.add("timer-container--max-width");
+                    lastNumber.classList.add("first-time");
+                }
+            })
+        })
+        
 

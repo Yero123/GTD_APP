@@ -65,6 +65,54 @@
                 </div>
             </div>
             <aside class="aside">
+                <div class="administration-container b-white bd-radius">
+                   <div class="data-container">
+                       <ul class="data-ul list-none">
+                           <li class="data-ul__li">
+                               <div class="info-li">
+                                   <h4 class="info-h4">4.3h</h4>
+                                   <p class="info-p">Actividades</p>
+                               </div>
+                           </li>
+                           <li class="data-ul__li">
+                               <div class="info-li">
+                                   <h4 class="info-h4">4.3h</h4>
+                                   <p class="info-p">Actividades</p>
+                               </div>
+                           </li>
+                           <li class="data-ul__li">
+                               <div class="info-li">
+                                   <h4 class="info-h4">4.3h</h4>
+                                   <p class="info-p">Actividades</p>
+                               </div>
+                           </li>
+                           <li class="data-ul__li ">
+                               <div class="info-li  no-border">
+                                   <h4 class="info-h4">30m</h4>
+                                   <p class="info-p">Actividades</p>
+                               </div>
+                           </li>
+                       </ul>
+                   </div>
+                   <div class="taskgenerator-container">
+                    <form class="taskgenerator-form">
+                        <input type="text" placeholder="Añadir actividad a Bandeja de entrada"" class="taskgenerator-input" value=''>
+                        <ul class="tarea-li__ul list-none">
+                           <li>
+                          <ul class="tomatos-li list-none">
+                              <li class="tarea-ul__li"><img src="img/tomato.svg" alt="tomato" class="pomodoro-icon--task"></li>
+                              <li class="tarea-ul__li"><img src="img/tomato.svg" alt="tomato" class="pomodoro-icon--task"></li>
+                              <li class="tarea-ul__li"><img src="img/tomato.svg"  alt="tomato" class="pomodoro-icon--task"></li>
+                              <li class="tarea-ul__li"><img src="img/tomato.svg"  alt="tomato" class="pomodoro-icon--task"></li>
+                              <li class="tarea-ul__li"><img src="img/tomato.svg"  alt="tomato" class="pomodoro-icon--task"></li>
+                           </ul>
+                          </li>
+                          <li class="tarea-ul__li"><i class="fas fa-chevron-right "></i></li>
+                          <li class="tarea-ul__li"> <i class="fas fa-circle circle-icon"></i></li>
+                      </ul>
+                    </form>
+                 </div>
+                </div>
                 <section>
                     <h4>Trabajo</h4>
                     <div class="tareas-container b-white bd-radius">
@@ -76,13 +124,16 @@
                                             <i class="fas fa-ellipsis-v icon--green"></i>
                                             <i class="far fa-play-circle icon--green"></i>
                                             <!--TAREAS-->
-                                            <p class="tarea-descripcion">Sacar Roland Interpol</p>
+                                            <div class="tarea__contenido"> 
+                                                <p class="tarea-descripcion">Sacar Roland Interpol</p>
+                                                <ul class="tarea-li__ul list-none">
+                                                    <li class="tarea-ul__li"><img src="img/tomato.svg" alt="tomato" class="pomodoro-icon"></li>
+                                                    <li class="tarea-ul__li"><img src="img/tomato.svg" alt="tomato" class="pomodoro-icon"></li>
+                                                    <li class="tarea-ul__li"><img src="img/tomato.svg"  alt="tomato" class="pomodoro-icon"></li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <ul class="tarea-li__ul list-none">
-                                            <li class="tarea-ul__li"><img src="img/tomato.svg" alt="tomato" class="icon"></li>
-                                            <li class="tarea-ul__li"><img src="img/tomato.svg" alt="tomato" class="icon"></li>
-                                            <li class="tarea-ul__li"><img src="img/tomato.svg"  alt="tomato" class="icon"></li>
-                                        </ul>
+                                        
                                     </div>
                                 </div>
                                 <div class="tarea__datetime">Hoy</div>
@@ -95,5 +146,6 @@
     </div>
     <!--IMAGEN REFERENCIAL <img src="color.jpg">-->
     <script src="js/animations_timer.js"></script>
+    <script src="js/logic_taskList.js"></script>
 </body>
 </html>

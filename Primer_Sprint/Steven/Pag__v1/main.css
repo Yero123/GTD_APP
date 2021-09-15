@@ -228,11 +228,127 @@ h4{
     display: flex;
     padding: 0;
     justify-content: flex-start;
+    align-items: center;
 }
 .tarea-ul__li{
-    padding-left: 1rem;
-}
-.tarea-descripcion{
-    margin-left: .5rem;
+    padding-left: .45rem;
+   
 }
 
+.tarea-descripcion{
+    margin-left: .5rem;
+    padding: 0;
+    margin: 0 0 2px 0;
+}
+.tarea__contenido{
+    margin-left: .7rem;
+    display: flex;
+    flex-direction: column;
+}
+/*pOMODORO ICON*/
+.pomodoro-icon{
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-right: 0rem;
+}
+/*INFO_CANTAINER*/
+.administration-container{
+ max-height: 200PX;
+}
+.data-ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 0px;
+    flex: 1;
+    margin: 0px;
+    height: 130px;
+    
+}
+
+.info-li{
+    display: flex;
+    border: solid ;
+    border-width:0px 5px 0px 0px;
+    border-color: #e2e2e2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.pomodoro-icon--task{
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-right: .3rem;
+}
+.no-border{
+    border:none;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+.data-ul__li{
+    text-decoration: none;
+    margin: 0px;
+    
+    
+}
+.info-li{
+    padding: 0 30px 0 0;
+}
+.info-h4{
+
+    color: cadetblue;
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin: 0;
+    
+}
+.info-p{
+    color: rgba(153, 153, 153, 0.685);
+}
+.data-container{
+    max-height: 15rem;
+    display: flex;
+    padding: 0;
+    border: solid ;
+    border-width:0px 0px 5px 0px;
+    border-color: #e2e2e2;
+    align-items: center;
+    justify-content: center;
+}
+.taskgenerator-container{
+
+}
+.taskgenerator-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 25%;
+}
+
+.taskgenerator-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 60%;
+    color:rgb(141, 141, 141);
+    font-size: 1.8rem;
+    max-height: 50px;
+    border: none;
+    outline: none;
+    
+    
+}
+.circle-icon{
+    font-size: 1.8rem; 
+    color: rgb(253, 240, 62); 
+    margin-right: .2rem;
+    padding-right: 20px;
+
+}
+.tomatos-li{
+    display: flex;
+    padding-right: 30px;
+}
